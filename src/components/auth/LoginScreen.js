@@ -43,6 +43,7 @@ export const LoginScreen = () => {
         e.preventDefault();
 
         if ( rPassword1 !== rPassword2 ) {
+            console.log(rPassword1, rPassword2);
             return Swal.fire('Error','Las contraseñas no coinciden', 'error');
         }
 
